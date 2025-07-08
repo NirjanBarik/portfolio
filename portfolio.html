@@ -1011,6 +1011,32 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                width: 200px;
+                gap: 0;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+                border-radius: 0 0 8px 8px;
+                z-index: 1001;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                width: 100%;
+                text-align: right;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+            }
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+            .nav-links a {
+                padding: 1rem 2rem;
+                display: block;
             }
             
             .menu-toggle {
@@ -1137,7 +1163,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-container">
-                    <img src="https://i.ibb.co/XkSzQ27P/IMG-20240919-205937.jpg" alt="Profile Picture" class="profile-pic">
+                    <img src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" alt="" class="profile-pic">
                 </div>
             </div>
         </div>
@@ -1283,7 +1309,7 @@
                         <li>Ensures tasks are saved even after refreshing the browser</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://github.com/NirjanBarik/to-do-list" target="_blank" class="project-link">
+                        <a href="https://github.com/NirjanBarik/todoList" target="_blank" class="project-link">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </a>
@@ -1302,7 +1328,7 @@
                         <li>One-click copy functionality for easy usage in projects</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://github.com/NirjanBarik/gradient-generator" target="_blank" class="project-link">
+                        <a href="https://github.com/NirjanBarik/gradientGenerator" target="_blank" class="project-link">
                             <i class="fab fa-github"></i>
                             View on GitHub
                         </a>
@@ -1321,7 +1347,7 @@
                 <p class="certification-institute">Indian Institute of Remote Sensing (IIRS), ISRO</p>
                 <p class="certification-date">Completed on 02/28/2025</p>
                 <p class="certification-description">9-hour comprehensive course on geodata processing techniques</p>
-                <a href="#" target="_blank" class="certification-link">
+                <a href="https://drive.google.com/file/d/1b85wKpPH7MCguOonndV7R-bT9rNGGNo6/view" target="_blank" class="certification-link">
                     <i class="fas fa-certificate"></i>
                     View Credentials
                 </a>
@@ -1335,7 +1361,7 @@
         <div class="volunteering-content">
             <h3 class="volunteering-title">Regular Blood Donor</h3>
             <p class="volunteering-description">Donated twice, committed to periodic donations for medical needs.</p>
-            <a href="#" target="_blank" class="volunteering-link">
+            <a href="https://drive.google.com/file/d/10ru9XKhLadyY-aZwyKkb9PoAB-eJFxyJ/view" target="_blank" class="volunteering-link">
                 <i class="fas fa-award"></i>
                 View Credentials
             </a>
@@ -1388,32 +1414,6 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="contact-details">
-                        <h4>Location</h4>
-                        <p>Halisahar, Kolkata, West Bengal</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p class="footer-text">© 2025 Nirjan Barik. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="https://linkedin.com/in/nirjanbarik" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/NirjanBarik" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:nirjanbarik1@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
     <script>
         // Preloader
         window.addEventListener('load', () => {
@@ -1430,6 +1430,21 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        // Optional: close menu when a link is clicked (for better UX)
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
+            });
         });
 
         // Scroll reveal
@@ -1453,6 +1468,14 @@
             particle.style.animationDelay = `${Math.random() * 10}s`;
             particlesContainer.appendChild(particle);
         }
+    </script>
+</body>
+</html>    </p style>Halisahar, Kolkata, West Bengal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </script>
 </body>
 </html>
