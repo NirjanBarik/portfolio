@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirjan Barik | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animated"></div>
+    
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <a href="#" class="nav-logo">{ NB }</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">console.log("Hello World!")</div>
+                <h1 class="hero-title">Nirjan Barik</h1>
+                <h2 class="hero-subtitle">Aspiring Software Engineer</h2>
+                <p class="hero-description">
+                    I'm an undergraduate student pursuing B.Tech in Computer Science at KGEC, passionate about creating innovative solutions with AI/ML and full-stack development.
+                </p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/nirjanbarik" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/NirjanBarik" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:nirjanbarik1@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918334807904" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                    <a href="https://drive.google.com/file/d/1nFLMgBMs3TpWS0RoP6vEx86uBJWi1efn/view?usp=sharing" 
+                       target="_blank" class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" alt="" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a highly motivated undergraduate student pursuing a Bachelor of Technology in Computer Science and Engineering at Kalyani Government Engineering College (Class of 2023-2027), currently seeking a software development or AI/ML internship to apply and enhance skills in full-stack development, machine learning, and cloud technologies.</p>
+                <p>My academic journey has been complemented by hands-on projects, including a To-Do List application and a Gradient Generator tool, which have helped me apply theoretical knowledge to practical scenarios. I'm particularly interested in Artificial Intelligence and Machine Learning, and I've completed a certification course in Geodata Processing using Python and Machine Learning from the Indian Institute of Remote Sensing, ISRO.</p>
+                <p>Beyond academics, I've achieved notable accomplishments such as securing the 3rd position in my school in the Class 12 Board Examination and ranking 6087 in the WBJEE Examination in 2023. I'm also committed to social contributions, being a regular blood donor.</p>
+                <p>Languages: English, Bengali, Hindi</p>
+                <p>Interests: Competitive Programming, AI-ML Research, DevOps, Open Source Contributions</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number">3rd</span>
+                    <span class="stat-label">Class 12 Position</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">6087</span>
+                    <span class="stat-label">WBJEE Rank</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Blood Donations</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section fade-in">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Bachelor of Technology in Computer Science and Engineering</h3>
+                    <p class="timeline-school">Kalyani Government Engineering College (KGEC), West Bengal | 2023-2027</p>
+                    <p class="timeline-date">Maulana Abul Kalam Azad University of Technology</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Higher Secondary Education</h3>
+                    <p class="timeline-school">Kanchrapara Harnett English Medium School, Kanchrapara, West Bengal | 2023</p>
+                    <p class="timeline-date">90.2% | All India Senior School Certificate Examination (AISSCE)</p>
+                    <p class="timeline-description">Central Board of Secondary Education (CBSE) | Science Stream (Physics, Chemistry, Mathematics) with Computer Science (Python)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Secondary Education</h3>
+                    <p class="timeline-school">Kanchrapara Harnett English Medium School, Kanchrapara, West Bengal | 2021</p>
+                    <p class="timeline-date">93.6% | All India Secondary School Examination (AISSE)</p>
+                    <p class="timeline-description">Central Board of Secondary Education (CBSE)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Languages</h3>
+                <ul class="skill-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Development</h3>
+                <ul class="skill-list">
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>REST API</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h3>DevOps & Cloud</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>GitHub Actions</li>
+                    <li>Docker</li>
+                    <li>AWS (EC2, S3)</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h3>ML & Data Science</h3>
+                <ul class="skill-list">
+                    <li>TensorFlow</li>
+                    <li>scikit-learn</li>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Data Cleaning & Visualization</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                <h3>Tools</h3>
+                <ul class="skill-list">
+                    <li>VS Code</li>
+                    <li>Jupyter</li>
+                    <li>Google Colab</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in">
+        <h2 class="section-title">Personal Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">To-Do List</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">A simple yet effective to-do list for task management.</p>
+                    <ul class="project-features">
+                        <li>Allows users to add, delete, and store tasks using local storage</li>
+                        <li>User-friendly interface with animated button interactions</li>
+                        <li>Ensures tasks are saved even after refreshing the browser</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/NirjanBarik/todoList" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Gradient Generator</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">A dynamic background gradient generator allowing users to create custom gradients.</p>
+                    <ul class="project-features">
+                        <li>Generates a smooth, visually appealing linear gradient background</li>
+                        <li>Allows users to pick random colours and see the generated CSS code</li>
+                        <li>One-click copy functionality for easy usage in projects</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/NirjanBarik/gradientGenerator" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section fade-in">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card">
+                <h3 class="certification-title">Geodata Processing using Python and Machine Learning</h3>
+                <p class="certification-institute">Indian Institute of Remote Sensing (IIRS), ISRO</p>
+                <p class="certification-date">Completed on 02/28/2025</p>
+                <p class="certification-description">9-hour comprehensive course on geodata processing techniques</p>
+                <a href="https://drive.google.com/file/d/1b85wKpPH7MCguOonndV7R-bT9rNGGNo6/view" target="_blank" class="certification-link">
+                    <i class="fas fa-certificate"></i>
+                    View Credentials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="section fade-in">
+        <h2 class="section-title">Volunteering & Social Contributions</h2>
+        <div class="volunteering-content">
+            <h3 class="volunteering-title">Regular Blood Donor</h3>
+            <p class="volunteering-description">Donated twice, committed to periodic donations for medical needs.</p>
+            <a href="https://drive.google.com/file/d/10ru9XKhLadyY-aZwyKkb9PoAB-eJFxyJ/view" target="_blank" class="volunteering-link">
+                <i class="fas fa-award"></i>
+                View Credentials
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:nirjanbarik1@gmail.com">nirjanbarik1@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+918334807904">+91-8334807904</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+     <script src="script.js"></script>
+        </body>
+</html>    
+</p> <a href="https://www.google.com/maps/place/Halisahar,+Kanchrapara,+West+Bengal/@22.9295828,88.4167631,6417m/data=!3m1!1e3!4m15!1m8!3m7!1s0x39f8948b3f1e1b89:0x993c9a7f776a5528!2sHalisahar,+Kanchrapara,+West+Bengal!3b1!8m2!3d22.9294867!4d88.4249078!16zL20vMDdmdnp2!3m5!1s0x39f8948b3f1e1b89:0x993c9a7f776a5528!8m2!3d22.9294867!4d88.4249078!16zL20vMDdmdnp2?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D"></a>Halisahar, Kolkata, West Bengal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </script>
+</body>
+</html>
