@@ -57,9 +57,7 @@ cd portfolio
 * View projects and click GitHub links
 * Download CV or contact via provided links
 
-## 📸 Screenshots
 
-(Add screenshots of your portfolio here)
 
 ## 📌 Future Improvements
 
