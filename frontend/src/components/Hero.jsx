@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
+import { Github as GitHub, Linkedin as LinkedIn, Mail, Phone, Download } from 'lucide-react';
 
 const Hero = () => {
   const containerVariants = {
@@ -54,10 +54,10 @@ const Hero = () => {
             
             <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
               <a href="https://linkedin.com/in/nirjanbarik" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-600 hover:text-white transition-all duration-300 border border-slate-700">
-                <Linkedin size={20} />
+                <LinkedIn size={20} />
               </a>
               <a href="https://github.com/NirjanBarik" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-white hover:text-black transition-all duration-300 border border-slate-700">
-                <Github size={20} />
+                <GitHub size={20} />
               </a>
               <a href="mailto:nirjanbarik1@gmail.com" className="p-3 rounded-full bg-slate-800/50 hover:bg-red-500 hover:text-white transition-all duration-300 border border-slate-700">
                 <Mail size={20} />

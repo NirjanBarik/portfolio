@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github as GitHub, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -77,7 +77,7 @@ const Projects = () => {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-medium transition-colors border border-slate-600"
                   >
-                    <Github size={18} />
+                    <GitHub size={18} />
                     View on GitHub
                   </a>
                 </div>
