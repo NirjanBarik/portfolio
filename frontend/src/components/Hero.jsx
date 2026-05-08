@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github as GitHub, Linkedin as LinkedIn, Mail, Phone, Download } from 'lucide-react';
+import { GitHub, Linkedin, Mail, Phone, Download } from "lucide-react";
 
 const Hero = () => {
   const containerVariants = {
