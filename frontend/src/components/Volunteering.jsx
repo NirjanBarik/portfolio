@@ -12,8 +12,8 @@ const Volunteering = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Volunteering & Social Contributions</h2>
-          <div className="w-20 h-1 bg-red-500 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-[#ff003c] font-orbitron glitch" data-text="Volunteering">Volunteering & Social Contributions</h2>
+          <div className="w-20 h-1 bg-red-500 mx-auto"></div>
         </motion.div>
 
         <div className="max-w-3xl mx-auto">
@@ -22,7 +22,7 @@ const Volunteering = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass p-8 md:p-12 rounded-3xl border border-slate-700 text-center relative overflow-hidden"
+            className="cyber-panel p-8 md:p-12 border border-slate-200 dark:border-slate-700 text-center relative overflow-hidden hover:border-[#ff003c] transition-colors hover:shadow-[0_0_15px_rgba(255,0,60,0.3)]"
           >
             <div className="absolute top-0 right-0 p-4 opacity-10">
               <Heart size={120} className="text-red-500" />
@@ -32,8 +32,8 @@ const Volunteering = () => {
               <Heart size={32} />
             </div>
             
-            <h3 className="text-2xl font-bold text-white mb-4">Regular Blood Donor</h3>
-            <p className="text-gray-300 text-lg mb-8">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-[#ff003c] mb-4 font-orbitron uppercase tracking-widest">Regular Blood Donor</h3>
+            <p className="text-slate-700 dark:text-gray-300 text-lg mb-8">
               Donated twice, committed to periodic donations for medical needs. I believe in giving back to the community in every way possible.
             </p>
             

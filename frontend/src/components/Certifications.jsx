@@ -13,7 +13,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 relative bg-slate-900/30">
+    <section id="certifications" className="py-20 relative bg-slate-50/50 dark:bg-slate-900/30 transition-colors duration-300">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -22,8 +22,8 @@ const Certifications = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Certifications</h2>
-          <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-[#fce205] font-orbitron glitch" data-text="Certifications">Certifications</h2>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -34,20 +34,20 @@ const Certifications = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="glass p-8 rounded-2xl border border-slate-700 hover:border-yellow-500/50 transition-all group"
+              className="cyber-panel p-8 border border-slate-200 dark:border-slate-700 hover:border-yellow-500 transition-all group hover:shadow-[0_0_15px_rgba(252,226,5,0.3)]"
             >
               <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center text-yellow-500 mb-6 group-hover:bg-yellow-500 group-hover:text-white transition-colors">
                 <Award size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
-              <p className="text-yellow-500/90 font-medium mb-1">{cert.institute}</p>
-              <p className="text-gray-500 text-sm mb-4">{cert.date}</p>
-              <p className="text-gray-400 mb-6">{cert.description}</p>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-[#00f3ff] mb-2 font-orbitron tracking-wide">{cert.title}</h3>
+              <p className="text-yellow-600 dark:text-[#fce205] font-bold mb-1 font-mono uppercase">{cert.institute}</p>
+              <p className="text-slate-500 dark:text-gray-500 text-sm mb-4">{cert.date}</p>
+              <p className="text-slate-600 dark:text-gray-400 mb-6">{cert.description}</p>
               <a 
                 href={cert.link} 
                 target="_blank" 
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-yellow-500 hover:text-yellow-400 font-medium transition-colors"
+                className="inline-flex items-center gap-2 text-yellow-600 dark:text-yellow-500 hover:text-yellow-700 dark:hover:text-yellow-400 font-medium transition-colors"
               >
                 View Credentials
                 <ExternalLink size={16} />

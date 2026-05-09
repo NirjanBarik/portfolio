@@ -19,30 +19,30 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-[#00f3ff] font-orbitron glitch" data-text="About Me">About Me</h2>
+          <div className="w-20 h-1 bg-pink-500 mx-auto"></div>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <motion.div 
-            className="flex-1 space-y-6 text-gray-300 text-lg leading-relaxed"
+            className="flex-1 space-y-6 text-slate-700 dark:text-gray-300 text-lg leading-relaxed"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
             <p>
-              I'm a highly motivated undergraduate student pursuing a Bachelor of Technology in Computer Science and Engineering at Kalyani Government Engineering College (Class of 2023-2027), currently seeking a software development or AI/ML internship to apply and enhance skills in full-stack development, machine learning, and cloud technologies.
+              I'm a Full-stack and AI-focused Computer Science undergraduate at Kalyani Government Engineering College (Class of 2023-2027), passionate about building scalable products and innovative solutions. I am currently seeking opportunities in startups to leverage my skills in MERN stack, FastAPI, and NLP, while taking ownership of end-to-end product development.
             </p>
             <p>
-              My academic journey has been complemented by hands-on projects, including a To-Do List application and a Gradient Generator tool, which have helped me apply theoretical knowledge to practical scenarios. I'm particularly interested in Artificial Intelligence and Machine Learning, and I've completed a certification course in Geodata Processing using Python and Machine Learning from the Indian Institute of Remote Sensing, ISRO.
+              My academic journey has been complemented by developing production-ready applications, including an AI-Powered Resume Analyzer and a MERN JSON Formatter. I'm particularly interested in Artificial Intelligence and Machine Learning, and I've completed a certification course in Geodata Processing using Python and Machine Learning from the Indian Institute of Remote Sensing, ISRO.
             </p>
             <p>
               Beyond academics, I've achieved notable accomplishments such as securing the 3rd position in my school in the Class 12 Board Examination and ranking 6087 in the WBJEE Examination in 2023. I'm also committed to social contributions, being a regular blood donor.
             </p>
-            <div className="glass p-6 rounded-2xl mt-8">
-              <p className="mb-2"><span className="text-white font-semibold">Languages:</span> English, Bengali, Hindi</p>
-              <p><span className="text-white font-semibold">Interests:</span> Competitive Programming, AI-ML Research, DevOps, Open Source Contributions</p>
+            <div className="cyber-panel p-6 mt-8 border-l-4 border-l-pink-500 dark:border-l-[#ff003c]">
+              <p className="mb-2"><span className="text-slate-900 dark:text-[#00f3ff] font-bold font-mono">Languages:</span> English, Bengali, Hindi</p>
+              <p><span className="text-slate-900 dark:text-[#00f3ff] font-bold font-mono">Interests:</span> Competitive Programming, AI-ML Research, DevOps, Open Source Contributions</p>
             </div>
           </motion.div>
 
@@ -57,11 +57,11 @@ const About = () => {
               <motion.div 
                 key={index}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="glass p-6 rounded-2xl flex flex-col items-center justify-center text-center group border border-slate-700 hover:border-slate-500 transition-colors"
+                className="cyber-panel p-6 flex flex-col items-center justify-center text-center group transition-colors hover:border-pink-500 dark:hover:border-[#ff003c]"
               >
-                <stat.icon className={`w-10 h-10 mb-4 ${stat.color} group-hover:scale-110 transition-transform`} />
-                <h3 className="text-3xl font-bold text-white mb-2">{stat.value}</h3>
-                <p className="text-gray-400 text-sm font-medium">{stat.label}</p>
+                <stat.icon className={`w-10 h-10 mb-4 ${stat.color.replace('blue', 'cyan').replace('green', 'lime')} group-hover:scale-110 transition-transform`} />
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-[#fce205] mb-2 font-orbitron">{stat.value}</h3>
+                <p className="text-slate-500 dark:text-gray-300 text-sm font-medium uppercase font-mono tracking-wider">{stat.label}</p>
               </motion.div>
             ))}
           </motion.div>

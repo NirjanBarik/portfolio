@@ -11,25 +11,29 @@ const GithubIcon = ({ size = 24, className = "" }) => (
 const Projects = () => {
   const projects = [
     {
-      title: 'To-Do List',
-      description: 'A simple yet effective to-do list for task management.',
+      title: 'AI-Powered Resume Analyzer',
+      description: 'Tech Stack: Python, FastAPI, React.js, MongoDB, NLP, TensorFlow',
       features: [
-        'Allows users to add, delete, and store tasks using local storage',
-        'User-friendly interface with animated button interactions',
-        'Ensures tasks are saved even after refreshing the browser'
+        'Developed a full-stack AI-powered resume analyzer using NLP-based semantic similarity matching between resumes and job descriptions.',
+        'Implemented automated skill extraction, resume scoring, and missing skill detection supporting real-time analysis.',
+        'Built scalable REST APIs with FastAPI reducing resume processing latency and improving backend responsiveness.',
+        'Designed an admin analytics dashboard to track resume statistics, skill demand trends, and user activity.',
+        'Engineered responsive React frontend with MongoDB integration for secure resume storage and fast retrieval.'
       ],
-      github: 'https://github.com/NirjanBarik/Todo-List-Project',
+      github: 'https://github.com/NirjanBarik',
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
-      title: 'Gradient Generator',
-      description: 'A dynamic background gradient generator allowing users to create custom gradients.',
+      title: 'MERN JSON Formatter & Validator',
+      description: 'Tech Stack: MongoDB, Express.js, React.js, Node.js, Vanilla CSS',
       features: [
-        'Generates a smooth, visually appealing linear gradient background',
-        'Allows users to pick random colours and see the generated CSS code',
-        'One-click copy functionality for easy usage in projects'
+        'Developed a MERN-based JSON formatter and validator with real-time formatting, syntax validation, and error detection.',
+        'Implemented secure snippet storage and history tracking using MongoDB for persistent user data management.',
+        'Added live analytics including character count, line count, and JSON data size tracking.',
+        'Optimized frontend responsiveness and one-click copy workflow for improved developer productivity.',
+        'Designed responsive UI supporting seamless formatting across desktop and mobile devices.'
       ],
-      github: 'https://github.com/NirjanBarik/Gradient-Generator',
+      github: 'https://github.com/NirjanBarik',
       gradient: 'from-purple-500 to-pink-500'
     }
   ];
@@ -44,8 +48,8 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Personal Projects</h2>
-          <div className="w-20 h-1 bg-cyan-500 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-[#00f3ff] font-orbitron glitch" data-text="Personal Projects">Personal Projects</h2>
+          <div className="w-20 h-1 bg-[#00f3ff] mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -56,33 +60,33 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
-              className="glass rounded-2xl overflow-hidden group flex flex-col h-full border border-slate-700 hover:border-slate-500 transition-colors"
+              className="cyber-panel overflow-hidden group flex flex-col h-full transition-colors hover:shadow-[0_0_15px_rgba(0,243,255,0.3)]"
             >
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
               
               <div className="p-8 flex-1 flex flex-col">
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-                  {project.title}
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-[#00f3ff] mb-3 group-hover:text-pink-600 dark:group-hover:text-[#ff003c] transition-colors font-orbitron tracking-wide">
+                  > {project.title}
                 </h3>
-                <p className="text-gray-400 mb-6 flex-1">
+                <p className="text-slate-600 dark:text-gray-400 mb-6 flex-1">
                   {project.description}
                 </p>
                 
                 <ul className="space-y-3 mb-8 flex-1">
                   {project.features.map((feature, fIdx) => (
-                    <li key={fIdx} className="flex items-start gap-3 text-sm text-gray-300">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0"></div>
+                    <li key={fIdx} className="flex items-start gap-3 text-sm text-slate-700 dark:text-gray-300 font-mono">
+                      <div className="mt-1.5 w-2 h-2 bg-[#00f3ff] shrink-0"></div>
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <div className="pt-6 border-t border-slate-700/50 mt-auto">
+                <div className="pt-6 border-t border-slate-200 dark:border-slate-700/50 mt-auto">
                   <a 
                     href={project.github} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-medium transition-colors border border-slate-600"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none"
                   >
                     <GithubIcon size={18} />
                     View on GitHub

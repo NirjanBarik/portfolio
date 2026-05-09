@@ -53,7 +53,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 relative bg-slate-900/50">
+    <section id="contact" className="py-20 relative bg-slate-100/50 dark:bg-slate-900/50 transition-colors duration-300">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,8 +62,8 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-red-500 mx-auto rounded-full"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-[#00f3ff] font-orbitron glitch" data-text="Get In Touch">Get In Touch</h2>
+          <div className="w-20 h-1 bg-[#ff003c] mx-auto"></div>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12">
@@ -75,7 +75,7 @@ const Contact = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+            <p className="text-slate-700 dark:text-gray-300 text-lg mb-8 leading-relaxed">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me!
             </p>
 
@@ -86,14 +86,14 @@ const Contact = () => {
                   href={info.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-6 p-4 rounded-2xl glass border border-slate-700 hover:border-red-500/50 hover:bg-slate-800/50 transition-all group"
+                  className="flex items-center gap-6 p-4 cyber-panel border border-slate-200 dark:border-slate-700 hover:border-red-500 hover:bg-slate-100 dark:hover:bg-black/50 transition-all group hover:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
                 >
                   <div className="w-14 h-14 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
                     <info.icon size={24} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-1">{info.title}</h4>
-                    <p className="text-lg font-semibold text-white">{info.detail}</p>
+                    <h4 className="text-sm font-medium text-slate-500 dark:text-gray-400 uppercase tracking-wider mb-1">{info.title}</h4>
+                    <p className="text-lg font-semibold text-slate-900 dark:text-[#00f3ff] font-mono">{info.detail}</p>
                   </div>
                 </a>
               ))}
@@ -108,11 +108,11 @@ const Contact = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="glass p-8 md:p-10 rounded-3xl border border-slate-700 flex flex-col gap-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Send me a message</h3>
+            <form onSubmit={handleSubmit} className="cyber-panel p-8 md:p-10 border border-slate-200 dark:border-slate-700 flex flex-col gap-6">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-[#ff003c] mb-2 font-orbitron">> Send me a message_</h3>
               
               <div className="flex flex-col gap-2">
-                <label htmlFor="name" className="text-sm font-medium text-gray-300">Your Name</label>
+                <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Name</label>
                 <input 
                   type="text" 
                   id="name"
@@ -120,13 +120,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-slate-800/50 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all"
+                  className="w-full bg-white dark:bg-black/50 border border-slate-300 dark:border-slate-600 rounded-none px-4 py-3 text-slate-900 dark:text-[#00f3ff] font-mono focus:outline-none focus:border-red-500 dark:focus:border-[#ff003c] transition-all dark:focus:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
                   placeholder="John Doe"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-sm font-medium text-gray-300">Your Email</label>
+                <label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Email</label>
                 <input 
                   type="email" 
                   id="email"
@@ -134,13 +134,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-slate-800/50 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all"
+                  className="w-full bg-white dark:bg-black/50 border border-slate-300 dark:border-slate-600 rounded-none px-4 py-3 text-slate-900 dark:text-[#00f3ff] font-mono focus:outline-none focus:border-red-500 dark:focus:border-[#ff003c] transition-all dark:focus:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-gray-300">Your Message</label>
+                <label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Message</label>
                 <textarea 
                   id="message"
                   name="message"
@@ -148,7 +148,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full bg-slate-800/50 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-all resize-none"
+                  className="w-full bg-white dark:bg-black/50 border border-slate-300 dark:border-slate-600 rounded-none px-4 py-3 text-slate-900 dark:text-[#00f3ff] font-mono focus:outline-none focus:border-red-500 dark:focus:border-[#ff003c] transition-all resize-none dark:focus:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
                   placeholder="How can I help you?"
                 ></textarea>
               </div>
@@ -156,7 +156,7 @@ const Contact = () => {
               <button 
                 type="submit" 
                 disabled={status === 'loading'}
-                className="w-full py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-colors disabled:opacity-70 mt-2"
+                className="w-full py-4 cyber-button flex items-center justify-center gap-2 disabled:opacity-70 mt-2"
               >
                 {status === 'loading' ? (
                   <><Loader2 className="animate-spin" size={20} /> Sending...</>

@@ -51,43 +51,47 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            <motion.div variants={itemVariants} className="inline-block px-4 py-2 rounded-full glass mb-6 text-sm font-mono text-blue-400">
-              console.log("Hello World!");
+            <motion.div variants={itemVariants} className="inline-block px-4 py-2 rounded-none border border-slate-400 dark:border-[#00f3ff] bg-transparent mb-6 text-sm font-mono text-slate-800 dark:text-[#00f3ff] shadow-[2px_2px_0px_rgba(0,0,0,0.2)] dark:shadow-[2px_2px_0px_rgba(0,243,255,0.4)]">
+              > console.log("Hello World!");_
             </motion.div>
             
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Nirjan Barik
+            <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight font-orbitron uppercase">
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 dark:from-[#00f3ff] dark:to-[#ff003c] glitch" data-text="Nirjan">Nirjan</span>
+              <br />Full-Stack Developer
             </motion.h1>
             
-            <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl text-gray-300 font-medium mb-6">
-              Aspiring Software Engineer
+            <motion.h2 variants={itemVariants} className="text-xl text-slate-600 dark:text-[#fce205] mb-10 max-w-2xl font-mono uppercase tracking-widest">
+              > Aspiring Software Engineer
             </motion.h2>
             
-            <motion.p variants={itemVariants} className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <motion.p variants={itemVariants} className="text-slate-600 dark:text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               I'm an undergraduate student pursuing B.Tech in Computer Science at KGEC, passionate about creating innovative solutions with AI/ML and full-stack development.
             </motion.p>
             
             <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
-              <a href="https://linkedin.com/in/nirjanbarik" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-blue-600 hover:text-white transition-all duration-300 border border-slate-700">
+              <a href="https://linkedin.com/in/nirjanbarik" target="_blank" rel="noreferrer" className="p-3 bg-transparent text-slate-800 dark:text-[#00f3ff] hover:bg-slate-800 hover:text-white dark:hover:bg-[#00f3ff] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#00f3ff] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(0,243,255,0.4)]">
                 <LinkedinIcon size={20} />
               </a>
-              <a href="https://github.com/NirjanBarik" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-slate-800/50 hover:bg-white hover:text-black transition-all duration-300 border border-slate-700">
+              <a href="https://github.com/NirjanBarik" target="_blank" rel="noreferrer" className="p-3 bg-transparent text-slate-800 dark:text-[#ff003c] hover:bg-slate-800 hover:text-white dark:hover:bg-[#ff003c] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#ff003c] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(255,0,60,0.4)]">
                 <GithubIcon size={20} />
               </a>
-              <a href="mailto:nirjanbarik1@gmail.com" className="p-3 rounded-full bg-slate-800/50 hover:bg-red-500 hover:text-white transition-all duration-300 border border-slate-700">
+              <a href="mailto:nirjanbarik1@gmail.com" className="p-3 bg-transparent text-slate-800 dark:text-[#fce205] hover:bg-slate-800 hover:text-white dark:hover:bg-[#fce205] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#fce205] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(252,226,5,0.4)]">
                 <Mail size={20} />
               </a>
-              <a href="tel:+918334807904" className="p-3 rounded-full bg-slate-800/50 hover:bg-green-500 hover:text-white transition-all duration-300 border border-slate-700">
+              <a href="tel:+918334807904" className="p-3 bg-transparent text-slate-800 dark:text-[#b026ff] hover:bg-slate-800 hover:text-white dark:hover:bg-[#b026ff] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#b026ff] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(176,38,255,0.4)]">
                 <Phone size={20} />
               </a>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="#contact" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <a href="#projects" className="px-8 py-4 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none flex items-center gap-2">
+                View My Work
+              </a>
+              <a href="#contact" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#00f3ff]/10 text-slate-800 dark:text-[#00f3ff] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2">
                 <Mail size={18} />
                 Get In Touch
               </a>
-              <a href="https://drive.google.com/file/d/1nFLMgBMs3TpWS0RoP6vEx86uBJWi1efn/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-3 rounded-full glass text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
+              <a href="https://drive.google.com/file/d/1nFLMgBMs3TpWS0RoP6vEx86uBJWi1efn/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#ff003c]/10 text-slate-800 dark:text-[#ff003c] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
                 <Download size={18} />
                 Download CV
               </a>
@@ -105,7 +109,8 @@ const Hero = () => {
               <img 
                 src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" 
                 alt="Nirjan Barik" 
-                className="relative w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl z-10"
+                className="relative w-full h-full object-cover rounded-none border-2 border-slate-800 dark:border-[#00f3ff] z-10"
+                style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)' }}
               />
             </div>
           </motion.div>
