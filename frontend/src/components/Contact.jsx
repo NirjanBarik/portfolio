@@ -109,7 +109,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
           >
             <form onSubmit={handleSubmit} className="cyber-panel p-8 md:p-10 border border-slate-200 dark:border-slate-700 flex flex-col gap-6">
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-[#ff003c] mb-2 font-orbitron">> Send me a message_</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-[#ff003c] mb-2 font-orbitron">&gt; Send me a message_</h3>
               
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-sm font-medium text-slate-700 dark:text-gray-300">Your Name</label>

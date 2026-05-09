@@ -66,7 +66,7 @@ const Projects = () => {
               
               <div className="p-8 flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-[#00f3ff] mb-3 group-hover:text-pink-600 dark:group-hover:text-[#ff003c] transition-colors font-orbitron tracking-wide">
-                  > {project.title}
+                  &gt; {project.title}
                 </h3>
                 <p className="text-slate-600 dark:text-gray-400 mb-6 flex-1">
                   {project.description}

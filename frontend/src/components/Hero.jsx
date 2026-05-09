@@ -52,7 +52,7 @@ const Hero = () => {
             animate="visible"
           >
             <motion.div variants={itemVariants} className="inline-block px-4 py-2 rounded-none border border-slate-400 dark:border-[#00f3ff] bg-transparent mb-6 text-sm font-mono text-slate-800 dark:text-[#00f3ff] shadow-[2px_2px_0px_rgba(0,0,0,0.2)] dark:shadow-[2px_2px_0px_rgba(0,243,255,0.4)]">
-              > console.log("Hello World!");_
+              &gt; console.log("Hello World!");_
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight font-orbitron uppercase">
@@ -61,7 +61,7 @@ const Hero = () => {
             </motion.h1>
             
             <motion.h2 variants={itemVariants} className="text-xl text-slate-600 dark:text-[#fce205] mb-10 max-w-2xl font-mono uppercase tracking-widest">
-              > Aspiring Software Engineer
+              &gt; Aspiring Software Engineer
             </motion.h2>
             
             <motion.p variants={itemVariants} className="text-slate-600 dark:text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
