@@ -33,7 +33,7 @@ const Projects = () => {
         'Optimized frontend responsiveness and one-click copy workflow for improved developer productivity.',
         'Designed responsive UI supporting seamless formatting across desktop and mobile devices.'
       ],
-      github: 'https://github.com/NirjanBarik/JSON-formatter',
+      github: 'https://github.com/NirjanBarik/JSON-Formater',
       gradient: 'from-purple-500 to-pink-500'
     }
   ];
