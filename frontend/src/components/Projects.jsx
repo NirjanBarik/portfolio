@@ -20,7 +20,7 @@ const Projects = () => {
         'Designed an admin analytics dashboard to track resume statistics, skill demand trends, and user activity.',
         'Engineered responsive React frontend with MongoDB integration for secure resume storage and fast retrieval.'
       ],
-      github: 'https://github.com/NirjanBarik',
+      github: 'https://github.com/NirjanBarik/AI-resume-analyser',
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
         'Optimized frontend responsiveness and one-click copy workflow for improved developer productivity.',
         'Designed responsive UI supporting seamless formatting across desktop and mobile devices.'
       ],
-      github: 'https://github.com/NirjanBarik',
+      github: 'https://github.com/NirjanBarik/JSON-formatter',
       gradient: 'from-purple-500 to-pink-500'
     }
   ];

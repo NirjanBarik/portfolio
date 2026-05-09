@@ -15,6 +15,11 @@ function PortfolioLayout() {
   return (
     <>
       <Navbar />
+      
+      {/* Moving Stars Background (Only visible in dark mode via CSS opacity) */}
+      <div className="stars-bg-1"></div>
+      <div className="stars-bg-2"></div>
+      
       <main className="transition-colors duration-300 relative z-10">
         <Hero />
         <About />

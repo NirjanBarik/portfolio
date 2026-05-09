@@ -55,7 +55,7 @@ const Hero = () => {
               &gt; console.log("Hello World!");_
             </motion.div>
             
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight font-orbitron uppercase">
+            <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight font-orbitron uppercase">
               Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 dark:from-[#00f3ff] dark:to-[#ff003c] glitch" data-text="Nirjan">Nirjan</span>
               <br />Full-Stack Developer
             </motion.h1>
@@ -69,7 +69,7 @@ const Hero = () => {
             </motion.p>
             
             <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
-              <a href="https://linkedin.com/in/nirjanbarik" target="_blank" rel="noreferrer" className="p-3 bg-transparent text-slate-800 dark:text-[#00f3ff] hover:bg-slate-800 hover:text-white dark:hover:bg-[#00f3ff] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#00f3ff] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(0,243,255,0.4)]">
+              <a href="https://linkedin.com/in/nirjanbarik04" target="_blank" rel="noreferrer" className="p-3 bg-transparent text-slate-800 dark:text-[#00f3ff] hover:bg-slate-800 hover:text-white dark:hover:bg-[#00f3ff] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#00f3ff] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(0,243,255,0.4)]">
                 <LinkedinIcon size={20} />
               </a>
               <a href="https://github.com/NirjanBarik" target="_blank" rel="noreferrer" className="p-3 bg-transparent text-slate-800 dark:text-[#ff003c] hover:bg-slate-800 hover:text-white dark:hover:bg-[#ff003c] dark:hover:text-black transition-all duration-300 border border-slate-800 dark:border-[#ff003c] shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_rgba(255,0,60,0.4)]">
@@ -91,7 +91,7 @@ const Hero = () => {
                 <Mail size={18} />
                 Get In Touch
               </a>
-              <a href="https://drive.google.com/file/d/1nFLMgBMs3TpWS0RoP6vEx86uBJWi1efn/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#ff003c]/10 text-slate-800 dark:text-[#ff003c] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
+              <a href="https://drive.google.com/file/d/10RDA0BA6Zss3MBeK_aOMEIwZ6Wkv0_yQ/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#ff003c]/10 text-slate-800 dark:text-[#ff003c] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
                 <Download size={18} />
                 Download CV
               </a>
@@ -104,15 +104,39 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="relative w-72 h-72 md:w-96 md:h-96">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 blur-xl opacity-40 animate-pulse"></div>
-              <img 
-                src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" 
-                alt="Nirjan Barik" 
-                className="relative w-full h-full object-cover rounded-none border-2 border-slate-800 dark:border-[#00f3ff] z-10"
+            <motion.div 
+              className="relative w-72 h-72 md:w-96 md:h-96 group cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              {/* Animated Neon Glow Behind */}
+              <div 
+                className="absolute inset-0 bg-gradient-to-tr from-[#00f3ff] to-[#ff003c] blur-2xl opacity-40 group-hover:opacity-80 group-hover:blur-3xl transition-all duration-500 z-0" 
                 style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)' }}
-              />
-            </div>
+              ></div>
+              
+              {/* The Image Container with Cyberpunk Clip Path */}
+              <div 
+                className="relative w-full h-full border-2 border-slate-800 dark:border-[#00f3ff] group-hover:border-[#ff003c] transition-colors duration-500 z-10 overflow-hidden bg-slate-900"
+                style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)' }}
+              >
+                <img 
+                  src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" 
+                  alt="Nirjan Barik" 
+                  className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-700 ease-out filter group-hover:contrast-125 opacity-90 group-hover:opacity-100"
+                />
+                
+                {/* Scanline Overlay */}
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(0,243,255,0.1)_1px,transparent_1px)] bg-[length:100%_4px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-20"></div>
+                
+                {/* Glitch Color Overlays on Hover */}
+                <div className="absolute inset-0 bg-[#00f3ff] mix-blend-overlay opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-20 pointer-events-none"></div>
+              </div>
+              
+              {/* Futuristic Corner Accents */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-[#00f3ff] transition-all duration-300 z-30 opacity-0 group-hover:opacity-100 group-hover:-translate-x-2 group-hover:-translate-y-2"></div>
+              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-[#ff003c] transition-all duration-300 z-30 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+            </motion.div>
           </motion.div>
           
         </div>
