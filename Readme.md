@@ -108,10 +108,7 @@ PersonalPortfolio/
 │   ├── index.html
 │   ├── vite.config.js
 │   └── package.json
-│
-├── index.html                # Legacy static files
-├── script.js                 # Legacy static files
-└── style.css                 # Legacy static files
+
 ```
 
 ---
