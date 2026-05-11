@@ -105,9 +105,9 @@ PersonalPortfolio/
 ├── frontend/                 # React frontend
 │   ├── public/               # Static assets
 │   ├── src/                  # React source code (Components, Pages)
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
+    ├── index.html
+    ├── vite.config.js
+    └── package.json
 
 ```
 
