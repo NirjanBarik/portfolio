@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -17,14 +17,23 @@ const Contact = () => {
     setStatus('loading');
     
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      await axios.post(`${apiUrl}/api/contact`, formData);
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
       setStatus('success');
       setFeedback('Message sent successfully! I will get back to you soon.');
       setFormData({ name: '', email: '', message: '' });
       setTimeout(() => setStatus('idle'), 5000);
     } catch (error) {
-      console.error(error);
+      console.error('EmailJS Error:', error);
       setStatus('error');
       setFeedback('Failed to send message. Please try again or email me directly.');
       setTimeout(() => setStatus('idle'), 5000);
@@ -121,7 +130,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full bg-white dark:bg-black/50 border border-slate-300 dark:border-slate-600 rounded-none px-4 py-3 text-slate-900 dark:text-[#00f3ff] font-mono focus:outline-none focus:border-red-500 dark:focus:border-[#ff003c] transition-all dark:focus:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
-                  placeholder="John Doe"
+                  placeholder="Sam"
                 />
               </div>
 
@@ -135,7 +144,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full bg-white dark:bg-black/50 border border-slate-300 dark:border-slate-600 rounded-none px-4 py-3 text-slate-900 dark:text-[#00f3ff] font-mono focus:outline-none focus:border-red-500 dark:focus:border-[#ff003c] transition-all dark:focus:shadow-[0_0_10px_rgba(255,0,60,0.3)]"
-                  placeholder="john@example.com"
+                  placeholder="sam23@example.com"
                 />
               </div>
 
