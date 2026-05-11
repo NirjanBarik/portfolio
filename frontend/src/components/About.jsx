@@ -5,7 +5,7 @@ const About = () => {
   const stats = [
     { label: 'Class 12 Position', value: '3rd', icon: Award, color: 'text-yellow-400' },
     { label: 'WBJEE Rank', value: '6087', icon: BookOpen, color: 'text-blue-400' },
-    { label: 'Blood Donations', value: '2', icon: Heart, color: 'text-red-400' },
+    { label: 'Blood Donations', value: '3', icon: Heart, color: 'text-red-400' },
     { label: 'Languages', value: '3', icon: Languages, color: 'text-green-400' },
   ];
 
