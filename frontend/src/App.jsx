@@ -20,7 +20,7 @@ function PortfolioLayout() {
       <div className="stars-bg-1"></div>
       <div className="stars-bg-2"></div>
       
-      <main className="transition-colors duration-300 relative z-10">
+      <main className="transition-colors duration-300 relative z-10 animate-modern-entry">
         <Hero />
         <About />
         <Education />
