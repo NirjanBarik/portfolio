@@ -121,7 +121,7 @@ const Hero = () => {
                 style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)' }}
               >
                 <img 
-                  src="https://i.postimg.cc/vmKdzRwv/IMG-20240919-205937.jpg" 
+                  src="https://i.postimg.cc/bYKYqsHC/Screenshot-2024-12-11-1943009.jpg" 
                   alt="Nirjan Barik" 
                   className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-700 ease-out filter group-hover:contrast-125 opacity-90 group-hover:opacity-100"
                 />
