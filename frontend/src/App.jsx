@@ -1,4 +1,7 @@
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import SplashScreen from './components/SplashScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -42,14 +45,22 @@ function PortfolioLayout() {
 }
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <ThemeProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<PortfolioLayout />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
-      </Router>
+      <AnimatePresence mode="wait">
+        {isLoading ? (
+          <SplashScreen key="splash" finishLoading={() => setIsLoading(false)} />
+        ) : (
+          <Router key="router">
+            <Routes>
+              <Route path="/" element={<PortfolioLayout />} />
+              <Route path="/admin" element={<Admin />} />
+            </Routes>
+          </Router>
+        )}
+      </AnimatePresence>
     </ThemeProvider>
   );
 }
