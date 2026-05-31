@@ -47,7 +47,7 @@ const About = () => {
           </motion.div>
 
           <motion.div 
-            className="flex-1 grid grid-cols-2 gap-6"
+            className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}

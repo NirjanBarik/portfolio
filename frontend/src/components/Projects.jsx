@@ -86,7 +86,7 @@ const Projects = () => {
                     href={project.github} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none w-full sm:w-auto"
                   >
                     <GithubIcon size={18} />
                     View on GitHub

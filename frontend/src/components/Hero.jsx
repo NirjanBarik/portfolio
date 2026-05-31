@@ -84,14 +84,14 @@ const Hero = () => {
             </motion.div>
             
             <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <a href="#projects" className="px-8 py-4 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none flex items-center gap-2">
+              <a href="#projects" className="px-8 py-4 cyber-button shadow-[4px_4px_0px_rgba(0,0,0,0.2)] dark:shadow-none flex items-center justify-center gap-2 w-full sm:w-auto">
                 View My Work
               </a>
-              <a href="#contact" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#00f3ff]/10 text-slate-800 dark:text-[#00f3ff] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2">
+              <a href="#contact" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#00f3ff]/10 text-slate-800 dark:text-[#00f3ff] font-orbitron font-bold uppercase transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto">
                 <Mail size={18} />
                 Get In Touch
               </a>
-              <a href="https://drive.google.com/file/d/10RDA0BA6Zss3MBeK_aOMEIwZ6Wkv0_yQ/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#ff003c]/10 text-slate-800 dark:text-[#ff003c] font-orbitron font-bold uppercase transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
+              <a href="https://drive.google.com/file/d/10RDA0BA6Zss3MBeK_aOMEIwZ6Wkv0_yQ/view?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-4 cyber-panel hover:bg-slate-100 dark:hover:bg-[#ff003c]/10 text-slate-800 dark:text-[#ff003c] font-orbitron font-bold uppercase transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto">
                 <Download size={18} />
                 Download CV
               </a>
