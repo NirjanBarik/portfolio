@@ -28,7 +28,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? 'cyber-panel py-4 shadow-lg border-b-2 dark:border-[#00f3ff]' : 'bg-transparent py-6'
       }`}
@@ -40,17 +43,31 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8 items-center">
-          {navLinks.map((link) => (
-            <li key={link.name}>
+          {navLinks.map((link, i) => (
+            <motion.li 
+              key={link.name}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * i + 0.3, duration: 0.5 }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <a
                 href={link.href}
-                className="text-slate-600 hover:text-pink-600 dark:text-gray-300 dark:hover:text-[#00f3ff] transition-colors text-sm font-bold uppercase tracking-wider font-orbitron"
+                className="relative text-slate-600 hover:text-pink-600 dark:text-gray-300 dark:hover:text-[#00f3ff] transition-colors text-sm font-bold uppercase tracking-wider font-orbitron group"
               >
                 {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-600 dark:bg-[#00f3ff] transition-all duration-300 group-hover:w-full"></span>
               </a>
-            </li>
+            </motion.li>
           ))}
-          <li>
+          <motion.li
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ delay: 0.1 * navLinks.length + 0.3, duration: 0.5 }}
+             whileHover={{ scale: 1.05 }}
+             whileTap={{ scale: 0.95 }}
+          >
             <button
               onClick={toggleTheme}
               className="p-2 rounded-none border border-slate-400 dark:border-[#fce205] bg-transparent text-slate-800 dark:text-[#fce205] hover:bg-slate-200 dark:hover:bg-[#fce205]/20 transition-colors shadow-[2px_2px_0px_rgba(0,0,0,0.2)] dark:shadow-[2px_2px_0px_rgba(252,226,5,0.4)]"
@@ -58,7 +75,7 @@ const Navbar = () => {
             >
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-          </li>
+          </motion.li>
         </ul>
 
         {/* Mobile Menu Toggle & Theme Toggle */}
@@ -101,7 +118,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 
