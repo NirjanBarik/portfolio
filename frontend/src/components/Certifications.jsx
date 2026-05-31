@@ -9,6 +9,27 @@ const Certifications = () => {
       date: 'Completed on 02/28/2025',
       description: '9-hour comprehensive course on geodata processing techniques',
       link: 'https://drive.google.com/file/d/1b85wKpPH7MCguOonndV7R-bT9rNGGNo6/view'
+    },
+    {
+      title: 'Figma Essential for User Interface and User Experience UI UX',
+      institute: 'Udemy',
+      date: 'Completed on May 24, 2026',
+      description: '4 total hours course on UI/UX using Figma',
+      link: 'https://ude.my/UC-4122383c-0a8d-4e8c-8daa-c7f87db24ea8'
+    },
+    {
+      title: '2026 Master Google Ads, Bing Ads and SA360 in Live Accounts',
+      institute: 'Udemy',
+      date: 'Completed on May 14, 2026',
+      description: '40.5 total hours comprehensive course on Google Ads and Bing Ads',
+      link: 'https://ude.my/UC-f67128ae-a295-46d8-90b3-26506f61fbf0'
+    },
+    {
+      title: 'Foundations of Stock Trading',
+      institute: 'Physics Wallah',
+      date: 'Completed on January 5, 2026',
+      description: 'Successfully completed the Foundations of Stock Trading Program',
+      link: '#'
     }
   ];
 
