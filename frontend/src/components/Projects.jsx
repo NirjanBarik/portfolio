@@ -11,7 +11,7 @@ const GithubIcon = ({ size = 24, className = "" }) => (
 const Projects = () => {
   const projects = [
     {
-      title: 'AI-Powered Resume Analyzer',
+      title: 'ResumeAI- AI-Powered Resume Analyzer',
       description: 'Tech Stack: Python, FastAPI, React.js, MongoDB, NLP, TensorFlow',
       features: [
         'Developed a full-stack AI-powered resume analyzer using NLP-based semantic similarity matching between resumes and job descriptions.',
@@ -24,7 +24,7 @@ const Projects = () => {
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
-      title: 'MERN JSON Formatter & Validator',
+      title: 'Josify- MERN JSON Formatter & Validator',
       description: 'Tech Stack: MongoDB, Express.js, React.js, Node.js, Vanilla CSS',
       features: [
         'Developed a MERN-based JSON formatter and validator with real-time formatting, syntax validation, and error detection.',
